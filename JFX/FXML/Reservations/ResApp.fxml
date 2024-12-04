@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="JFX.FXML.Reservations.ReservationAppController">
+    <TableView fx:id="table">
+        <columns>
+            <TableColumn fx:id="idColumn" text="ID"/>
+            <TableColumn fx:id="dateColumn" text="Date"/>
+            <TableColumn fx:id="priceColumn" text="Price"/>
+        </columns>
+    </TableView>
+    <GridPane>
+        <Label text="ID" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <TextField fx:id="idField" promptText="ID" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+        <Label text="Date" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <TextField fx:id="dateField" promptText="Date (YYYY-MM-DD)" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+        <Label text="Price" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+        <TextField fx:id="priceField" promptText="Price" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+        <Button text="Add" onAction="#handleAdd" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+        <Button text="Delete" onAction="#handleDelete" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+        <Button text="Update" onAction="#handleUpdate" GridPane.rowIndex="3" GridPane.columnIndex="2"/>
+        <Button text="View All" onAction="#handleView" GridPane.rowIndex="3" GridPane.columnIndex="3"/>
+        <Button text="Clear" onAction="#handleClear" GridPane.rowIndex="3" GridPane.columnIndex="4"/>
+        <Button text="Back" onAction="#handleBack" GridPane.rowIndex="4" GridPane.columnIndex="5"/>
+
+    </GridPane>
+</VBox>

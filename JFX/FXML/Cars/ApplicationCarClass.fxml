@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="JFX.FXML.Cars.ApplicationControllerCar" stylesheets="/JFX/FXML/Cars/styles.css">
+    <MenuBar fx:id="menuBar" styleClass="menu-bar">
+        <Menu text="Options cars" styleClass="menu">
+            <MenuItem text="CRUD OPERATIONS" onAction="#handleCarManagement" styleClass="menu-item"/>
+            <MenuItem text="Filter cars by year" onAction="#handleFilterByYears" styleClass="menu-item"/>
+            <MenuItem text="Filter cars by model" onAction="#handleFilterByModel" styleClass="menu-item"/>
+            <MenuItem text="Get Reports" onAction="#handleGetReports" styleClass="menu-item"/>
+            <MenuItem text = "Get Back" onAction="#handleBack" styleClass="menu-item"/>
+        </Menu>
+    </MenuBar>
+    <VBox fx:id="contentBox" styleClass="vbox"/>
+</VBox>
